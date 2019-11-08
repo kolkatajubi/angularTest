@@ -8,5 +8,9 @@ app.use(bodyParser.json());
 
 app.use(express.static("app"));
 
-app.listen(1050);
-console.log("app listening on port 1050");
+const ipaddress = "127.0.0.1";
+const port = 1050;
+
+app.listen(port, ipaddress, () =>
+  console.log(`Listening at ${ipaddress}:${port}...`)
+);
