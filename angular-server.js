@@ -8,5 +8,5 @@ app.use(bodyParser.json());
 
 app.use(express.static("app"));
 
-app.listen(2019);
-console.log("app listening on port 2019");
+app.listen(1050);
+console.log("app listening on port 1050");
